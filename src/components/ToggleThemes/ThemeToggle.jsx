@@ -6,7 +6,7 @@ function ThemeToggle() {
   const [{ isDark }, toggleTheme] = useContext(ThemeContext)
 
   return (
-    <div>
+    <div className="themes">
       <div className="radio">
         <RadioButton
           label="Dark"
