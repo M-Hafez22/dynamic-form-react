@@ -2,11 +2,14 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
 import { UserInputProvider } from "./contexts/userInput"
+import { ThemeProvider } from "./contexts/theme"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <UserInputProvider>
-      <App />
-    </UserInputProvider>
+    <ThemeProvider>
+      <UserInputProvider>
+        <App />
+      </UserInputProvider>
+    </ThemeProvider>
   </React.StrictMode>
 )
