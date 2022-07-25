@@ -1,0 +1,22 @@
+@import "config";
+@import "toggleThemes";
+@import "radioButton";
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark {
+  background-color: $clr-dark;
+  color: $clr-light;
+}
+
+.light {
+  background-color: $clr-light;
+  color: $clr-dark;
+}
