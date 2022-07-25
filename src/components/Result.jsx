@@ -12,8 +12,8 @@ function Result() {
       )
   )
   return (
-    <div className="userinfo">
-      <h1>UserInfo</h1>
+    <div className="result">
+      <h1>Your Info</h1>
       <div>{feildsOut}</div>
     </div>
   )
