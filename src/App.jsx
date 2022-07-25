@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"
-import Home from './components/Home'
-import Result from './components/Result'
+import Home from "./components/Home"
+import Result from "./components/Result"
+import ThemeToggle from "./components/ToggleThemes/ThemeToggle"
+import { ThemeContext } from "./contexts/theme"
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path="/result" element={<Result />} />
         </Routes>
       </Router>
+      <ThemeToggle />
     </div>
   )
 }
